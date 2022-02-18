@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: rgb(235, 218, 197);
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    margin: 2%;
+    padding: 2%;
+    background: linear-gradient(to bottom, rgb(41, 55, 136), rgb(124, 88, 223));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    width: 70%;
+    border-radius: 25px;
+    transform: rotateY();
+}
+
+.card-container {
+    background: linear-gradient(to bottom, rgb(96, 76, 214), rgb(165, 180, 228));
+    border-radius: 15px;
+    margin: 5px 0px;
+}
+
+.card-container:hover {
+    filter: hue-rotate(90deg);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#generate-input-label {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+#example-text {
+    width: 250px;
+    height: 150px;
+}
